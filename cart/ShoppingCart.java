@@ -15,6 +15,7 @@ public class ShoppingCart {
         int delIndex;
         boolean stop = false;
 
+        //test the cart by starting with three items. in real shopping list this own't be included.
         cart.add ("apple");
         cart.add ("orange");
         cart.add ("pear");
@@ -74,9 +75,9 @@ public class ShoppingCart {
                     }
                     break;
                 case "del":
-                    // if my termslength (ie cmd) is less than two words long, that means i only typed del
+                    // if my terms.length (what i typed in) is less than two words long, that means i only typed del
                     if (terms.length < 2) {
-                        //pritn statement 
+                        //print statement 
                         System.out.println("Please provide an index in order to delete");
                     } else {
                         try{
